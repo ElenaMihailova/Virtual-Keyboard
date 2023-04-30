@@ -357,4 +357,48 @@ template {
   border: 2px solid #135709;
   padding: 1.25rem;
 }
+
+.keyboard__text {
+  width: 100%;
+  border-radius: 1rem;
+  min-height: 20rem;
+  margin-bottom: 1.25rem;
+  resize: none;
+  border: 2px solid #135709;
+}
+
+.key {
+  min-width: 4rem;
+  height: 4rem;
+  border: 1px solid #135709;
+  margin: 5px;
+  padding: 30px;
+  border-radius: 1rem;
+  background-color: inherit;
+  color: #135709;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.key[data-key-code=Space] {
+  min-width: 30rem;
+}
+.key:active {
+  background-color: aqua;
+}
+
+.key__label {
+  font-size: 2rem;
+}
+
+.key__label--upper {
+  display: none;
+}
+
+.keys__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
