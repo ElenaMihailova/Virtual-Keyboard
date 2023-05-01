@@ -78,7 +78,6 @@ class Keyboard {
       return () => {
         this.isCapsLock=!this.isCapsLock;
         this.isLowerCase=!this.isCapsLock;
-
         this.renderKeyboard();
         this.textElement.focus();
       };
@@ -237,4 +236,4 @@ class Keyboard {
   }
 }
 
-export {Keyboard};
+export default Keyboard;

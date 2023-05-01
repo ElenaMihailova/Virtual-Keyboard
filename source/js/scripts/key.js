@@ -24,7 +24,6 @@ class Key {
         }
 
         key.addEventListener('click', this.onClick);
-
         this.container.appendChild(key);
     }
 }
