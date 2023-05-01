@@ -361,8 +361,6 @@ template {
 
 .keyboard {
   display: block;
-  border: 2px solid #135709;
-  padding: 1.25rem;
 }
 
 .keyboard__text {
@@ -425,5 +423,9 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
