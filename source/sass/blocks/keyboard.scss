@@ -1,0 +1,29 @@
+.keyboard {
+    display: block;
+}
+
+.keyboard__text {
+    width: 100%;
+    border-radius: 1rem;
+    min-height: 15rem;
+    margin-bottom: 1.25rem;
+    resize: none;
+    border: 2px solid #135709;
+    padding: 1rem;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    background-color: #A4DFCB;
+    color: #135709;
+
+    &:hover,
+    &:focus {
+        outline: 2px solid #135709;
+    }
+}
+
+.keyboard__groupe {
+    border: 2px solid #135709;
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
