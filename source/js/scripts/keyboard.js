@@ -229,7 +229,7 @@ class Keyboard {
   }
 
   render() {
-    this.container.classList.add('keyboard__container');
+    this.container.classList.add('keyboard');
 
     this.renderTextarea();
     this.renderKeyboard();

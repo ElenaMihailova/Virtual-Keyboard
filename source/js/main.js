@@ -19,11 +19,21 @@ function createKeyboard(container) {
     keyboard.render();
 }
 
+function createFooter(container) {
+    const footerElement=document.createElement('footer');
+
+    footerElement.classList.add('footer');
+    footerElement.innerHTML='<p class="footer__text">Клавиатура создана в операционной системе Windows</p> <p class="footer__text">Для переключения языка комбинация: Ctrl + Shift (EN/RU)</p>';
+
+    container.appendChild(footerElement);
+}
+
 window.addEventListener('load', () => {
     const mainElement=document.createElement('main');
     mainElement.classList.add('container');
     createHeader(mainElement);
     createKeyboard(mainElement);
+    createFooter(mainElement);
     document.body.appendChild(mainElement);
 });
 
