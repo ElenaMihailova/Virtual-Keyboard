@@ -342,14 +342,21 @@ template {
 .container {
   margin: 0 auto;
   padding: 1.25rem 2.5rem;
-  height: 100vh;
-  background-color: #A4DFCB;
+  height: 100%;
   color: #135709;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .header {
-  font-size: 2.5rem;
-  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.header__title {
+  margin: 0;
 }
 
 .keyboard {
@@ -361,44 +368,62 @@ template {
 .keyboard__text {
   width: 100%;
   border-radius: 1rem;
-  min-height: 20rem;
+  min-height: 15rem;
   margin-bottom: 1.25rem;
   resize: none;
   border: 2px solid #135709;
+  padding: 1rem;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  background-color: #A4DFCB;
+  color: #135709;
+}
+.keyboard__text:hover, .keyboard__text:focus {
+  outline: 2px solid #135709;
+}
+
+.keyboard__groupe {
+  border: 2px solid #135709;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .key {
-  min-width: 4rem;
-  height: 4rem;
+  min-width: 1rem;
+  height: 2rem;
   border: 1px solid #135709;
   margin: 5px;
-  padding: 30px;
+  padding: 1.5rem;
   border-radius: 1rem;
-  background-color: inherit;
+  background-color: #A4DFCB;
   color: #135709;
-  font-size: 20px;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.5s ease-in, color 0.5s, box-shadow 0.5s;
 }
 .key[data-key-code=Space] {
-  min-width: 30rem;
+  min-width: 20rem;
 }
-.key:active {
-  background-color: aqua;
+.key.active {
+  background-color: #135709;
+  color: #E7E6AB;
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+.key:hover {
+  background-color: #135709;
+  color: #E7E6AB;
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
 }
 
 .key__label {
-  font-size: 2rem;
-}
-
-.key__label--upper {
-  display: none;
+  font-size: 1rem;
 }
 
 .keys__row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

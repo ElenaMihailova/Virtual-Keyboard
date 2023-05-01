@@ -1,10 +1,10 @@
 class Key {
-    constructor(container, keyCode, label, secondLabel, isLowerCase, isActive, onClick) {
+    constructor(container, keyCode, label, secondLabel, isCase, isActive, onClick) {
         this.container=container;
         this.keyCode=keyCode;
         this.label=label;
         this.secondLabel=secondLabel;
-        this.isLowerCase=isLowerCase;
+        this.isCase=isCase;
         this.isActive=isActive;
         this.onClick=onClick;
     }

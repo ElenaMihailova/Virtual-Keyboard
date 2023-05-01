@@ -25,7 +25,6 @@ class Keyboard {
     this.keysBase=keysBase[currentLanguage];
     this.keysInfo=this.keysBase.flat().reduce((acc, x) => {
       acc[x.keyCode]={...x};
-
       return acc;
     }, {});
   }
@@ -42,7 +41,6 @@ class Keyboard {
     if (keyData.keyCode==='Tab') {
       return () => {
         this.textElement.value+='\t';
-
         this.textElement.focus();
       };
     }
@@ -64,7 +62,6 @@ class Keyboard {
     if (keyData.keyCode==='Enter') {
       return () => {
         this.textElement.value+='\n';
-
         this.textElement.focus();
       };
     }
@@ -202,7 +199,7 @@ class Keyboard {
   }
 
   renderKeyboard() {
-    const previousKeyboard=document.querySelector('.keyboard');
+    const previousKeyboard=document.querySelector('.keyboard__groupe');
 
     if (previousKeyboard) {
       previousKeyboard.remove();

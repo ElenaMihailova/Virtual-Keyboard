@@ -1,7 +1,10 @@
 .container {
     margin: 0 auto;
     padding: 1.25rem  2.5rem;
-    height: 100vh;
-    background-color: #A4DFCB;
+    height: 100%;
+    // background-color: #A4DFCB;
     color: #135709;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
