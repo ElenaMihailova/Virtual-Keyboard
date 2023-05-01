@@ -10,7 +10,7 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease-in,  color  0.3s, box-shadow 0.5s;
+    transition: background-color 0.3s ease-in, color 0.3s, box-shadow 0.5s;
 
     &[data-key-code="Space"] {
         min-width: 20rem;
