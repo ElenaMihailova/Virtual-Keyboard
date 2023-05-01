@@ -8,7 +8,6 @@ class Keyboard {
     this.isLowerCase=true;
     this.isShift=false;
     this.isCapsLock=false;
-
     this.switchLayout(true);
   }
 
@@ -69,7 +68,6 @@ class Keyboard {
     if (keyData.keyCode==='Space') {
       return () => {
         this.textElement.value+=' ';
-
         this.textElement.focus();
       };
     }
@@ -78,7 +76,6 @@ class Keyboard {
       return () => {
         this.isCapsLock=!this.isCapsLock;
         this.isLowerCase=!this.isCapsLock;
-
         this.renderKeyboard();
         this.textElement.focus();
       };
@@ -99,7 +96,6 @@ class Keyboard {
   initializeEventListeners() {
     document.addEventListener('keydown', (event) => {
       event.preventDefault();
-
       document.querySelector(`.key[data-key-code="${event.code}"]`).classList.add('active');
 
       if (this.keysInfo[event.code].keyCode==='Tab') {
@@ -151,7 +147,6 @@ class Keyboard {
 
       if (this.isShift) {
         this.isShift=false;
-
         this.renderKeyboard();
       }
 
@@ -190,11 +185,8 @@ class Keyboard {
 
   renderTextarea() {
     const textarea=document.createElement('textarea');
-
     textarea.classList.add('keyboard__text');
-
     this.container.appendChild(textarea);
-
     this.textElement=textarea;
   }
 
@@ -237,4 +229,4 @@ class Keyboard {
   }
 }
 
-export {Keyboard};
+export default Keyboard;
